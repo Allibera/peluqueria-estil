@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peluquería Estil | Tu look, tu identidad</title>
+
+  <!-- LCP Image Preload -->
+  <link rel="preload" as="image" href="/salon-hero.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- SVG Pattern for subtle global noise overlay -->
+  <svg width="0" height="0" style="position:absolute;z-index:-1;">
+    <defs>
+      <pattern id="noise-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="1.5" fill="#000" opacity="0.1" />
+        <circle cx="25" cy="50" r="1.5" fill="#000" opacity="0.1" />
+        <circle cx="75" cy="25" r="1.5" fill="#000" opacity="0.1" />
+        <circle cx="50" cy="75" r="1.5" fill="#000" opacity="0.1" />
+        <circle cx="85" cy="85" r="1.5" fill="#000" opacity="0.1" />
+      </pattern>
+    </defs>
+  </svg>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

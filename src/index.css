@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primario: #1C1C1E;
+    --color-acento: #C9A96E;
+    --color-acento-claro: #E8D5B0;
+    --color-fondo: #FAFAF8;
+    --color-texto: #2C2C2E;
+    --color-texto-suave: #6B6B6B;
+    --color-blanco: #FFFFFF;
+    --color-borde: #E8E4DC;
+    --color-cream: #F5F0E8;
+  }
+
+  body {
+    @apply bg-fondo text-texto font-sans antialiased overflow-x-hidden;
+  }
+
+  /* Global noise overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+    /* Note: rule prefers `<pattern>` SVG inline, but CSS background is needed for fixed overlay. 
+     A small circle pattern could be: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='%23000'/%3E%3C/svg%3E"); */
+  }
+
+  /* Typography utilities */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  /* Common UI Elements */
+  .btn-primary {
+    @apply bg-acento text-primario font-semibold rounded-[4px] px-6 py-3 transition-all duration-300 ease-custom-ease inline-flex items-center justify-center;
+  }
+  .btn-primary:hover {
+    background-color: #B8904A;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(201, 169, 110, 0.4);
+  }
+
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-blanco font-semibold rounded-[50px] px-6 py-3 transition-all duration-300 ease-custom-ease inline-flex items-center justify-center;
+  }
+  .btn-whatsapp:hover {
+    background-color: #1FAD54;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+  }
+  
+  .btn-outline {
+    @apply border border-primario text-primario font-semibold rounded-[4px] px-6 py-3 transition-all duration-300 ease-custom-ease inline-flex items-center justify-center hover:bg-primario hover:text-blanco;
+  }
+
+  .badge-gold {
+    @apply inline-flex items-center bg-acento rounded-[50px] px-4 py-1.5 text-sm font-semibold text-primario;
+  }
+
+  .section-divider {
+    @apply w-12 h-[3px] bg-acento my-6;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  .fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide scrollbar across all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

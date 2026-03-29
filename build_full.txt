@@ -1,0 +1,108 @@
+﻿
+> peluqueria-estil@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 4 modules transformed.
+node.exe : [31mx[39m 
+Build failed in 533ms
+En línea: 1 Carácter: 1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1mx[39m Build failed    
+ in 533ms:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[31merror during build:
+[31m[vite:css] [postcss] C
+:/Users/user/Desktop/PROYEC
+TOS/WEBS/PLANTILLAS 
+WEB/Peluquerias/Demo 
+Ejmplo/src/index.css:56:5: 
+The `text-blanco` class 
+does not exist. If 
+`text-blanco` is a custom 
+class, make sure it is 
+defined within a `@layer` 
+directive.[31m
+file: [36mC:/Users/user/De
+sktop/PROYECTOS/WEBS/PLANTI
+LLAS WEB/Peluquerias/Demo E
+jmplo/src/index.css:56:4[3
+1m
+    at Input.error (C:\User
+s\user\Desktop\PROYECTOS\WE
+BS\PLANTILLAS 
+WEB\Peluquerias\Demo Ejmplo
+\node_modules\postcss\lib\i
+nput.js:135:16)
+    at AtRule.error (C:\Use
+rs\user\Desktop\PROYECTOS\W
+EBS\PLANTILLAS 
+WEB\Peluquerias\Demo Ejmplo
+\node_modules\postcss\lib\n
+ode.js:146:32)
+    at processApply (C:\Use
+rs\user\Desktop\PROYECTOS\W
+EBS\PLANTILLAS 
+WEB\Peluquerias\Demo Ejmplo
+\node_modules\tailwindcss\l
+ib\lib\expandApplyAtRules.j
+s:380:29)
+    at C:\Users\user\Deskto
+p\PROYECTOS\WEBS\PLANTILLAS
+ WEB\Peluquerias\Demo Ejmpl
+o\node_modules\tailwindcss\
+lib\lib\expandApplyAtRules.
+js:551:9
+    at C:\Users\user\Deskto
+p\PROYECTOS\WEBS\PLANTILLAS
+ WEB\Peluquerias\Demo Ejmpl
+o\node_modules\tailwindcss\
+lib\processTailwindFeatures
+.js:55:50
+    at async plugins (C:\Us
+ers\user\Desktop\PROYECTOS\
+WEBS\PLANTILLAS 
+WEB\Peluquerias\Demo Ejmplo
+\node_modules\tailwindcss\l
+ib\plugin.js:38:17)
+    at async 
+LazyResult.runAsync (C:\Use
+rs\user\Desktop\PROYECTOS\W
+EBS\PLANTILLAS 
+WEB\Peluquerias\Demo Ejmplo
+\node_modules\postcss\lib\l
+azy-result.js:293:11)
+    at async compileCSS (fi
+le:///C:/Users/user/Desktop
+/PROYECTOS/WEBS/PLANTILLAS%
+20WEB/Peluquerias/Demo%20Ej
+mplo/node_modules/vite/dist
+/node/chunks/dep-BK3b2jBa.j
+s:36898:21)
+    at async 
+Object.transform (file:///C
+:/Users/user/Desktop/PROYEC
+TOS/WEBS/PLANTILLAS%20WEB/P
+eluquerias/Demo%20Ejmplo/no
+de_modules/vite/dist/node/c
+hunks/dep-BK3b2jBa.js:36171
+:11)
+    at async transform (fil
+e:///C:/Users/user/Desktop/
+PROYECTOS/WEBS/PLANTILLAS%2
+0WEB/Peluquerias/Demo%20Ejm
+plo/node_modules/rollup/dis
+t/es/shared/node-entry.js:2
+1316:16)[39m

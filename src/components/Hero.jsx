@@ -61,7 +61,7 @@ export default function Hero() {
             
             <h1 className="font-serif text-white text-[clamp(42px,7.2vw,86px)] lg:text-[76px] leading-[1.1] mb-8 tracking-tight drop-shadow-md">
               Tu look, tu <em className="italic text-acento font-serif pr-2">identidad.</em>
-              <span className="block mt-2 lg:mt-4 whitespace-nowrap lg:whitespace-normal">Tu peluquería en Tarragona</span>
+              <span className="block mt-2 lg:mt-4 whitespace-normal">Tu peluquería en Tarragona</span>
             </h1>
             
             <p className="text-white/90 text-lg md:text-xl font-sans mb-10 max-w-[650px] font-light leading-relaxed drop-shadow-sm">
